@@ -14,7 +14,11 @@
   "author": "Andrew A. Anissi",
   "scripts": {
     "dev": "next dev",
+    "dev:local": "NEXT_PUBLIC_UNITED_API_URL=http://localhost:4000/graphql next dev",
+    "dev:remote": "NEXT_PUBLIC_UNITED_API_URL=https://wingedearth-united-api-76c9d860a852.herokuapp.com/graphql next dev",
     "build": "next build",
+    "build:local": "NEXT_PUBLIC_UNITED_API_URL=http://localhost:4000/graphql next build",
+    "build:remote": "NEXT_PUBLIC_UNITED_API_URL=https://wingedearth-united-api-76c9d860a852.herokuapp.com/graphql next build",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
